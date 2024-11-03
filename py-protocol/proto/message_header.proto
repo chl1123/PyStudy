@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package rbk4.protocol;
+
+message Message_Header {
+    // 数据采集源
+    string channel = 1;
+    // 帧序号
+    uint64 sequence = 2;
+    // 采集时间戳 (单位: ns)
+    uint64 timestamp = 3;
+}
