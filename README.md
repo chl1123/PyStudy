@@ -1,2 +1,3 @@
-# Py-Study
+# PyStudy
+
 study python
