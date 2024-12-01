@@ -1,4 +1,4 @@
-from progress_thread.inter_process_communication.server import MyManager
+from progress_thread.inter_process_communication.multiprocessing_managers.server import MyManager
 import time
 
 

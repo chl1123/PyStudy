@@ -1,4 +1,4 @@
-from progress_thread.inter_process_communication.client1 import client
+from progress_thread.inter_process_communication.multiprocessing_managers.client1 import client
 import time
 
 if __name__ == '__main__':
