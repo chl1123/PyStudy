@@ -1,7 +1,12 @@
 class Student(object):
     __stu_num = 0
 
+    def __new__(cls, *args, **kwargs):
+        print("__new__")
+        return super(Student, cls).__new__(cls)
+
     def __init__(self, name):
+        print("__init__")
         self.name = name
         # Student.__stu_num += 1  # 和下面等效
         self.__add_stu()
@@ -25,4 +30,5 @@ s1 = Student("crx")
 s2 = Student("gsx")
 s3 = Student("oen")
 
+# 不会调用__new__和__init__, Student("XXX")时才调用
 print("student num: ", Student.get_stu_num())
