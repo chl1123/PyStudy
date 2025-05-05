@@ -1,6 +1,6 @@
 import sys
 
-sys.path.append("./proto")
+sys.path.append("proto")
 import proto.message_odometer_pb2 as message_odometer
 
 """
